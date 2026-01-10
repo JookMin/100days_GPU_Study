@@ -5,7 +5,7 @@ This challenge focuses on implementing high-performance kernels in both **CUDA (
 ## 🟢 Phase 1: Element-wise Operations & Memory Foundation (Day 01–20)
 | Day | Topic | LeetGPU Task / Implementation Goal | Done |
 |:---:|:---|:---|:---|
-| 01 | Vector Add | `y = a + b` (Basic Memory I/O) | [] |
+| 01 | Vector Add | `y = a + b` (Basic Memory I/O) | [x] |
 | 02 | Vector Scale | `y = alpha * x` (Scalar Broadcasting) | [ ] |
 | 03 | Element-wise Sub | `y = a - b` | [ ] |
 | 04 | Fused AXPBY | `y = alpha * x + beta * y` (Load/Store Optimization) | [ ] |
