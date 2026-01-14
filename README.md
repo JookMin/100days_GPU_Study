@@ -7,7 +7,7 @@ This challenge focuses on implementing high-performance kernels in both **CUDA (
 |:---:|:---|:---|:---|
 | 01 | Vector Add | `y = a + b` (Basic Memory I/O) | [x] |
 | 02 | Vector Scale | `y = alpha * x` (Scalar Broadcasting) | [x] |
-| 03 | Element-wise Sub | `y = a - b` | [ ] |
+| 03 | Element-wise Sub | `y = a - b` | [x] |
 | 04 | Fused AXPBY | `y = alpha * x + beta * y` (Load/Store Optimization) | [ ] |
 | 05 | ReLU | `max(0, x)` | [ ] |
 | 06 | Leaky ReLU | `x < 0 ? alpha * x : x` | [ ] |
