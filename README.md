@@ -11,7 +11,7 @@ This challenge focuses on implementing high-performance kernels in both **CUDA (
 | 04 | Fused AXPBY | `y = alpha * x + beta * y` (Load/Store Optimization) | [x] |
 | 05 | ReLU | `max(0, x)` | [x] |
 | 06 | Leaky ReLU | `x < 0 ? alpha * x : x` | [x] |
-| 07 | Sigmoid | Numerical stability for `1 / (1 + exp(-x))` | [ ] |
+| 07 | Sigmoid | Numerical stability for `1 / (1 + exp(-x))` | [x] |
 | 08 | GeLU | GELU Approximation Kernel | [ ] |
 | 09 | SiLU (Swish) | `x * sigmoid(x)` | [ ] |
 | 10 | Tanh | Hyperbolic Tangent | [ ] |
