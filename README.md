@@ -12,7 +12,7 @@ This challenge focuses on implementing high-performance kernels in both **CUDA (
 | 05 | ReLU | `max(0, x)` | [x] |
 | 06 | Leaky ReLU | `x < 0 ? alpha * x : x` | [x] |
 | 07 | Sigmoid | Numerical stability for `1 / (1 + exp(-x))` | [x] |
-| 08 | GeLU | GELU Approximation Kernel | [ ] |
+| 08 | GeLU | GELU Approximation Kernel | [x] |
 | 09 | SiLU (Swish) | `x * sigmoid(x)` | [ ] |
 | 10 | Tanh | Hyperbolic Tangent | [ ] |
 | 11 | Boundary Handling | Handling non-aligned sizes: `N != block_size * K` | [ ] |

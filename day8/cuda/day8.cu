@@ -5,11 +5,18 @@
 #include <cmath>
 #include <chrono>
 
-__global__ void Sigmoid(const float* X, float* Z, int N) {
+__global__ void GELU(const float* X, float* Z, int N) {
   const int idx = blockIdx.x * blockDim.x + threadIdx.x;
   if (idx < N) {
-    float val = X[idx];
-    Z[idx] = 1.0f / (1.0f + expf(-val));
+    float x = X[idx];
+    
+    const float SQRT_2_OVER_PI = 0.7978845608f;
+    const float COEF = 0.044715f;
+
+    float x3 = x * x * x;
+    
+    float tanh_val = tanhf(SQRT_2_OVER_PI * (x + COEF * x3));
+    Z[idx] = 0.5f * x * (1.0f + tanh_val);
   } 
 }
 
@@ -37,7 +44,7 @@ int main(){
   dim3 blockDim(256, 1, 1);
   dim3 gridDim((elementsNum + blockDim.x - 1) / blockDim.x, 1, 1);
 
-  Sigmoid<<<gridDim, blockDim>>>(d_x, d_z, elementsNum);
+  GELU<<<gridDim, blockDim>>>(d_x, d_z, elementsNum);
 
   cudaError_t err = cudaDeviceSynchronize();
   if (err != cudaSuccess) {
@@ -48,9 +55,16 @@ int main(){
 
   int errorCount = 0;
   const float epsilon = 1e-4f; 
+  const float SQRT_2_OVER_PI = 0.7978845608f;
+  const float COEF = 0.044715f;
 
   for (int i = 0; i < elementsNum; i++){
-    float cpu_result = 1.0f / (1.0f + std::exp(-h_x[i]));
+    float x = h_x[i]; 
+    float x3 = x * x * x;
+    
+    float tanh_val = std::tanh(SQRT_2_OVER_PI * (x + COEF * x3));
+    float cpu_result = 0.5f * x * (1.0f + tanh_val);
+
     if (std::fabs(cpu_result - h_z[i]) > epsilon) {
       errorCount++;
     }
