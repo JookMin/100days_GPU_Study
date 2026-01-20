@@ -14,7 +14,7 @@ This challenge focuses on implementing high-performance kernels in both **CUDA (
 | 07 | Sigmoid | Numerical stability for `1 / (1 + exp(-x))` | [x] |
 | 08 | GeLU | GELU Approximation Kernel | [x] |
 | 09 | SiLU (Swish) | `x * sigmoid(x)` | [x] |
-| 10 | Tanh | Hyperbolic Tangent | [ ] |
+| 10 | Tanh | Hyperbolic Tangent | [x] |
 | 11 | Boundary Handling | Handling non-aligned sizes: `N != block_size * K` | [ ] |
 | 12 | 2D Strided Load | Row-major/Col-major layout conversion | [ ] |
 | 13 | Vector Mean | 1D Vector average | [ ] |
