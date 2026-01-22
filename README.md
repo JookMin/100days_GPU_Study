@@ -19,7 +19,7 @@ This challenge focuses on implementing high-performance kernels in both **CUDA (
 | 12 | 2D Strided Load | Row-major/Col-major layout conversion | [ ] |
 | 13 | Vector Mean | 1D Vector average | [ ] |
 | 14 | L2 Norm | `sqrt(sum(x^2))` | [ ] |
-| 15 | Clamp/Clip | Limit `x` in range `[min, max]` | [ ] |
+| 15 | Clamp/Clip | Limit `x` in range `[min, max]` | [x] |
 | 16 | Dropout (Fixed) | Apply dropout using an input mask | [ ] |
 | 17 | Dropout (RNG) | On-the-fly Philox RNG mask generation | [ ] |
 | 18 | Bitwise Ops | Bit shifting for low-bit quantization | [ ] |
