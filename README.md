@@ -41,7 +41,7 @@ This challenge focuses on implementing high-performance kernels in both **CUDA (
 | 28 | Variance | Row-wise `Var(x)` | [ ] |
 | 29 | Std Deviation | Row-wise `sigma` calculation | [ ] |
 | 30 | Naive Softmax | Basic formula (Watch for Overflow) | [ ] |
-| 31 | Safe Softmax | Numerical stability via Max subtraction | [ ] |
+| 31 | Safe Softmax | Numerical stability via Max subtraction | [x] |
 | 32 | Online Softmax (Max)| Online algorithm: Max tracking loop | [ ] |
 | 33 | Online Softmax (Final)| 1-pass Online Softmax integration | [ ] |
 | 34 | Log-Softmax | `log(softmax(x))` | [ ] |
@@ -59,7 +59,7 @@ This challenge focuses on implementing high-performance kernels in both **CUDA (
 |:---:|:---|:---|:---|
 | 41 | LayerNorm (FWD) | Normalization based on `mu` and `sigma` | [ ] |
 | 42 | RMSNorm (FWD) | Root Mean Square Norm with weight `gamma` | [ ] |
-| 43 | BatchNorm (FWD) | Channel-wise stats normalization | [ ] |
+| 43 | BatchNorm (FWD) | Channel-wise stats normalization | [x] |
 | 44 | GroupNorm (FWD) | Group-wise normalization | [ ] |
 | 45 | InstanceNorm (FWD)| Instance-wise normalization | [ ] |
 | 46 | LayerNorm (BWD) | Input gradient `dx` calculation | [ ] |
