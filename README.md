@@ -64,7 +64,7 @@ This challenge focuses on implementing high-performance kernels in both **CUDA (
 | 45 | InstanceNorm (FWD)| Instance-wise normalization | [ ] |
 | 46 | LayerNorm (BWD) | Input gradient `dx` calculation | [ ] |
 | 47 | LayerNorm (Weight BWD)| `d_gamma`, `d_beta` weight gradient calculation | [ ] |
-| 48 | RMSNorm (BWD) | RMSNorm Backward kernel | [ ] |
+| 48 | RMSNorm (BWD) | RMSNorm Backward kernel | [x] |
 | 49 | Naive Transpose | Basic matrix transpose | [ ] |
 | 50 | Tiled Transpose | Shared Memory bank conflict resolution | [ ] |
 | 51 | Padding | Padding arbitrary matrices for Tiled ops | [ ] |
