@@ -50,7 +50,7 @@ This challenge focuses on implementing high-performance kernels in both **CUDA (
 | 37 | Top-k (k=1) | Optimized `argmax` search | [ ] |
 | 38 | Histogram | Counting value distributions (Atomic) | [ ] |
 | 39 | Min-Max Normalizer | `x_norm = (x - min) / (max - min)` | [ ] |
-| 40 | Dot Product | Vector-Vector inner product reduction | [ ] |
+| 40 | Dot Product | Vector-Vector inner product reduction | [x] |
 
 
 
